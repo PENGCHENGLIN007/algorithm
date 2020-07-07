@@ -4,7 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 不含有重复字符的最长子串
+ * 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
+ * https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/
  *
  * @author pengchenglin
  * @create 2020-06-04 16:56
@@ -52,6 +53,14 @@ public class lengthOfLongestSubstring {
 
     }
 
+    /**
+     * 官方解答
+     *
+     * 执行用时：8 ms, 在所有 Java 提交中击败了69.00%的用户
+     * 内存消耗：40.1 MB, 在所有 Java 提交中击败了5.20%的用户
+     * @param s
+     * @return
+     */
     public static int lengthOfLongestSubstring2(String s) {
         // 哈希集合，记录每个字符是否出现过
         Set<Character> occ = new HashSet<>();
