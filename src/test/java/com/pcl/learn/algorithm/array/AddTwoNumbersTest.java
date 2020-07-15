@@ -1,8 +1,6 @@
-package com.pcl.learn.algorithm;
+package com.pcl.learn.algorithm.array;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class AddTwoNumbersTest {
     @Test

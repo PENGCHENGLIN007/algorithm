@@ -1,4 +1,4 @@
-package com.pcl.learn.algorithm;
+package com.pcl.learn.algorithm.array;
 
 import java.util.Stack;
 
