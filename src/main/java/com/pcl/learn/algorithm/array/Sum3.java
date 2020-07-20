@@ -123,10 +123,11 @@ public class Sum3 {
      */
     public List<List<Integer>> threeSum2(int[] nums) {
         List<List<Integer>> ans = new ArrayList();
-        int len = nums.length;
-        if(nums==null || len<3){
+        if(nums==null || nums.length<3){
             return ans;
         }
+        int len = nums.length;
+
         Arrays.sort(nums);
         for(int i = 0;i<len-2;i++){
             if(nums[i]>0){

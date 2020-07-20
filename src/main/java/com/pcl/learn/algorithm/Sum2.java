@@ -19,7 +19,7 @@ import java.util.Map;
  * @author pengchenglin
  * @create 2020-04-24 20:01
  */
-public class TwoNumberSum {
+public class Sum2 {
 
     /**
      * 从第一个元素开始，逐一和之后的元素求和，判断是否是目标值。
