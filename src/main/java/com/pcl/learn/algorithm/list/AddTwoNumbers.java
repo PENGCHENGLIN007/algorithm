@@ -1,4 +1,4 @@
-package com.pcl.learn.algorithm.array;
+package com.pcl.learn.algorithm.list;
 
 /**
  * 两数相加
@@ -154,10 +154,3 @@ public class AddTwoNumbers {
     }
 }
 
-class ListNode{
-    int val;
-    ListNode next;
-    ListNode(int x){val = x;}
-
-
-}

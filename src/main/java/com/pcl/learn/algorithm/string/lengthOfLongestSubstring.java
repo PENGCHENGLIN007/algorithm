@@ -1,4 +1,4 @@
-package com.pcl.learn.algorithm;
+package com.pcl.learn.algorithm.string;
 
 import java.util.HashSet;
 import java.util.Set;
