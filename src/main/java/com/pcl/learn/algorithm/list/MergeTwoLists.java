@@ -24,8 +24,10 @@ public class MergeTwoLists {
         ListNode l2 = new ListNode(1);
         l2.next = new ListNode(3);
         l2.next.next = new ListNode(4);
-        ListNode rs = new MergeTwoLists().mergeTwoLists(l1,l2);
+        ListNode rs = new MergeTwoLists().mergeTwoLists1(l1,l2);
+        //ListNode rs = new MergeTwoLists().mergeTwoLists(l1,l2);
         System.out.println(rs.toString());
+
     }
 
     /**
@@ -49,22 +51,21 @@ public class MergeTwoLists {
                 rs1.next = t2;
                 t2 = t2.next;
                 rs1 = rs1.next;
-                continue;
+                break;
             }else if(t2==null) {
                 rs1.next = t1;
                 t1 = t1.next;
                 rs1 = rs1.next;
-                continue;
+                break;
             }
             if(t1.val>t2.val){
                 rs1.next = t2;
                 t2 = t2.next;
-                rs1 = rs1.next;
             }else {
                 rs1.next = t1;
                 t1 = t1.next;
-                rs1 = rs1.next;
             }
+            rs1 = rs1.next;
         }
         return rs.next;
 
@@ -86,10 +87,10 @@ public class MergeTwoLists {
         } else if (l2 == null) {
             return l1;
         } else if (l1.val < l2.val) {
-            l1.next = mergeTwoLists(l1.next, l2);
+            l1.next = mergeTwoLists1(l1.next, l2);
             return l1;
         } else {
-            l2.next = mergeTwoLists(l1, l2.next);
+            l2.next = mergeTwoLists1(l1, l2.next);
             return l2;
         }
 
