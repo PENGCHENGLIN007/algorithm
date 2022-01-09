@@ -23,14 +23,14 @@ public class DivideTwoIntegers {
             sign = true;
         }else if(dividend>0 && divisor<0){
             sign = false;
-            divisor = 0-divisor;
+            divisor = -divisor;
         }else if(dividend<0 && divisor>0){
             sign = false;
-            dividend = 0-dividend;
+            dividend = -dividend;
         }else{
             sign = true;
-            divisor = 0-divisor;
-            dividend = 0-dividend;
+            divisor = -divisor;
+            dividend = -dividend;
         }
 
         int i = 0;
@@ -38,8 +38,10 @@ public class DivideTwoIntegers {
         while(sum<dividend){
             sum+=divisor;
             i++;
+            if(i>107374182)
+            System.out.println(i);
         }
-        if(sign==false){
+        if(!sign){
             return -i;
         }else{
             return i;
